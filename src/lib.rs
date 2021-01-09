@@ -918,7 +918,7 @@ impl FromStr for Cultures {
     type Err = Error;
 
     fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
-        match s.to_lowercase().trim() {
+        match s.trim() {
             "ar-sa" => Ok(Cultures::ArSa),
             "bg-bg" => Ok(Cultures::BgBg),
             "ca-es" => Ok(Cultures::CaEs),
